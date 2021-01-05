@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".crimeFragment">
+
+  <include layout="@layout/camera_title_layout"
+      />
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       style="?android:listSeparatorTextViewStyle"
+       android:text="@string/crime_details_label"/>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:id="@+id/crime_date"/>
+
+   <androidx.appcompat.widget.AppCompatCheckBox
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/crime_solved"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+       android:layout_marginBottom="5dp"
+      android:text="@string/crime_solved_label"/>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:layout_marginLeft="16dp"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="16dp"
+       android:id="@+id/fragment_crime_delete_btn"
+       android:text="Delete Crime"
+       android:textColor="@android:color/white"
+       android:background="@color/colorPrimary"
+       android:layout_height="wrap_content"/>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:layout_marginLeft="16dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginRight="16dp"
+       android:id="@+id/fragment_crime_chooseSus_btn"
+       android:text="Choose Suspect"
+       android:textColor="@android:color/white"
+       android:background="@color/colorPrimary"
+       android:layout_height="wrap_content"/>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginBottom="10dp"
+       android:id="@+id/fragment_crime_sendReport_btn"
+       android:text="@string/crime_send_report_text"
+       android:textColor="@android:color/white"
+       android:background="@color/colorPrimary"
+       android:layout_height="wrap_content"/>
+
+   <!--
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:id="@+id/fragment_crime_confront_btn"
+       android:text="@string/confront_btn"
+       android:textColor="@android:color/white"
+       android:background="@color/colorPrimary"
+       android:layout_height="wrap_content"/>-->
+
+</LinearLayout>
